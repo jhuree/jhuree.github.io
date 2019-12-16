@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Example of the Authorization Code flow with Spotify</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+      #login, #loggedin {
+        display: none;
+      }
+      .text-overflow {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 500px;
+      }
+    </style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.1/handlebars.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="module" src="authorize.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="login">
+        <h1>Welcome to QMusic!</h1>
+        <a href="/login" class="btn btn-primary">Log in with Spotify</a>
+      </div>
+      <div id="loggedin">
+        <div>
+          <h1>QMusic</h1>
+        </div>
+
+        <div id="createQueue">
+          <h3>Create a new queue</h3>
+          <form id="createQueue" action="./player.html">
+            <input type="text" name="queueName">
+            <input type="submit" value="create">
+          </form>
+        </div>
+        
+        <!-- TODO: HARDCODED!!!!!!!!!!!! -->
+        <div id="joinQueue">
+          <h3>Join an existing queue</h3> 
+          <form id="joinQueue" action="./join.html">
+            <input type="text" name="queueCode">
+            <input type="submit" value="join">
+          </form>   
+        </div>
+        
+        <div>
+            <button class="btn btn-default" id="obtain-new-token">Obtain new token using the refresh token</button>
+        </div>
+      </div>   
+    </div>
+  </body>
+</html>
+

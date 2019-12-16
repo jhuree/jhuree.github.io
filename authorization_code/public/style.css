@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+form#searchbar {
+    text-align: center;
+    margin: 30px;
+}
+
+img {
+    left: 80%;
+    width: 50px;
+    position: relative;
+}
+
+button {
+    border: none;
+    color: gray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+h3 {
+    color: #A0B7E8;
+    margin-top: 50px;
+}
+
+span {
+    padding: 5px;
+}
+
+#sharing {
+    color: #A0B7E8;
+}
+
+#code {
+    text-align: center;
+}
+
+#title {
+    width: 200px;
+    left: 42%;
+    margin-bottom: 40px;
+}
+
+#playlist {
+    margin-top: 50px;
+    width: 70%;
+    background-color: #DDE6F8;
+    left: 15%;
+    position: relative;
+}
+
+.playlist_track {
+    padding: 20px;
+}
+
+#results {
+    list-style: none;
+    background-color:#DDE6F8;
+    display: inline-block;
+    padding: 10px;
+}
+
+li {
+    padding: 3px;
+}
